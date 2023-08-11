@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/server.ts",
   "scripts": {
-    "start": "nodemon",
+    "start": "ts-node ./src/server.ts",
     "start:prod": "npm run build && node ./dist/src/server.js",
     "build": "npx tsc",
     "migrate": "npx knex migrate:latest",
@@ -19,7 +19,6 @@
     "knex": "^2.5.1",
     "moment": "^2.29.4",
     "mysql": "^2.18.1",
-    "nodemon": "^3.0.1",
     "socket.io": "^4.7.2"
   },
   "devDependencies": {
