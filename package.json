@@ -1,0 +1,53 @@
+{
+  "name": "art-to-hire-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "nodemon",
+    "start:prod": "npm run build && node ./dist/src/server.js",
+    "build": "npx tsc",
+    "migrate": "npx knex migrate:latest",
+    "seed": "npx knex seed:run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "knex": "^2.5.1",
+    "moment": "^2.29.4",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/mysql": "^2.15.21",
+    "@types/node": "^20.4.8",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^37.0.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jsonwebtoken": "^9.0.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": "20.1.0"
+  }
+}
